@@ -17,4 +17,4 @@ PyDy Repo. To try the demo out for yourself, you need the following:
 - A C compiler (such as `gcc`)
 
 You can also view the demo on [nbviewer
-here](https://nbviewer.ipython.org/github/jcrist/talks/blob/master/pydy_talk/pydy_talk_demo.ipynb)
+here](http://nbviewer.ipython.org/github/jcrist/talks/blob/master/pydy_talk/pydy_talk_demo.ipynb)
