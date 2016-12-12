@@ -1,0 +1,11 @@
+digraph graphname {
+    fontcolor="white";
+    fontsize="20.0";
+    label="Directed Acyclic Graph";
+    bgcolor="#00000000";
+    node [penwidth="3", color="white", fontcolor="#FFFFFF"];
+    edge [penwidth="3", color="white"];
+    a -> b -> c;
+    b -> d;
+    a -> d;
+}
