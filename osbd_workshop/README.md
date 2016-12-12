@@ -1,6 +1,10 @@
 ## OSBD Workshop Materials
 
-Materials for my talk on Dask & Numba at OSBD 2016.
+Materials for my talk on Dask & Numba at the Open Science in Big Data workshop
+[(OSBD 2016)](https://osbd.github.io/).
+
+The rendered example notebook can be viewed
+[here](http://nbviewer.jupyter.org/github/jcrist/talks/blob/master/osbd_workshop/Ocean%20Temperature%20Data.ipynb).
 
 ### Setup environment
 
