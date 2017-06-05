@@ -12,7 +12,7 @@ Continuum Analytics
 
 ~~~
 
-Materials can be found on github [here](https://github.com/jcrist/talks/harvard_cs207_talk)
+Materials can be found on github [here](https://github.com/jcrist/talks/tree/master/harvard_cs207_talk)
 
 ~===~
 
