@@ -10,5 +10,5 @@ given in the talk.
 
 The notebooks contain bokeh plots, and are best viewed in nbviewer:
 
-- [Array Demo](http://nbviewer.ipython.org/github/jcrist/talks/pydata_nyc_2015/Dask_PyData_NYC/blob/master/Dask_Array.ipynb)
-- [DataFrame Demo](http://nbviewer.ipython.org/github/jcrist/talks/pydata_nyc_2015/Dask_PyData_NYC/blob/master/Dask_DataFrame_Airline.ipynb)
+- [Array Demo](http://nbviewer.jupyter.org/github/jcrist/talks/blob/master/pydata_nyc_2015/Dask_Array.ipynb)
+- [DataFrame Demo](http://nbviewer.jupyter.org/github/jcrist/talks/blob/master/pydata_nyc_2015/Dask_DataFrame_Airline.ipynb)
