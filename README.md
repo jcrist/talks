@@ -23,6 +23,11 @@
     - [Slides](http://matthewrocklin.com/slides/dask-scipy-2016.html#/)
     - [Video](https://www.youtube.com/watch?v=PAGjm4BMKlk)
 
+- **Dask: Flexible Parallelism** (Harvard CS207 Guest Lecture)
+
+    - [Slides](http://jcrist.github.io/talks/harvard_cs207_talk/slides.html)
+    - [Materials](harvard_cs207_talk)
+
 - **Scaling Numerical Python with Dask & Numba** (OSBD 2016)
 
     - [Slides](http://jcrist.github.io/talks/osbd_workshop/slides.html)
