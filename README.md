@@ -2,6 +2,8 @@
 
 ### Dask:
 
+- [PyData NYC 2015: Dask - Parallelizing NumPy/Pandas Through Task Scheduling](pydata_nyc_2015)
+
 - [Scaling Numerical Python with Dask & Numba](osbd_workshop)
 
   Materials for my talk on Dask & Numba at the Open Science in Big Data workshop
