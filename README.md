@@ -45,3 +45,7 @@
     - [Slides](https://speakerdeck.com/jcrist/python-for-the-dynamicist).
     - [Materials](dynamics_talk)
 
+- **Multibody Dynamics and Control with SymPy** (SciPy 2015)
+
+    - [Materials](https://github.com/pydy/pydy-tutorial-human-standing)
+    - [Video](https://www.youtube.com/watch?v=mdo2NYtA-xY)
