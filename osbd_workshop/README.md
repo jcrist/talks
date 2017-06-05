@@ -8,6 +8,8 @@ Slides can be viewed [here](http://jcrist.github.io/talks/osbd_workshop/slides.h
 The rendered example notebook can be viewed
 [here](http://nbviewer.jupyter.org/github/jcrist/talks/blob/master/osbd_workshop/Ocean%20Temperature%20Data.ipynb).
 
+The extended abstract in the proceedings can be found [here](paper.pdf).
+
 ### Setup environment
 
 ```bash

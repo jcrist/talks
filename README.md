@@ -26,6 +26,7 @@
 - **Scaling Numerical Python with Dask & Numba** (OSBD 2016)
 
     - [Slides](http://jcrist.github.io/talks/osbd_workshop/slides.html)
+    - [Abstract](osbd_workshop/paper.pdf)
     - [Materials](osbd_workshop)
 
 ### Dynamics and SymPy:
