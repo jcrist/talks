@@ -34,6 +34,10 @@
     - [Abstract](osbd_workshop/paper.pdf)
     - [Materials](osbd_workshop)
 
+- **New Developments in Scaling Python Analytics** (Big Data Tech 2017)
+    - [Slides](http://jcrist.github.io/talks/minneanalytics_2017/slides.html)
+    - [Materials](minneanalytics_2017)
+
 ### Dynamics and SymPy:
 
 - **Generating Fast and Correct Code with SymPy** (PyMNtos 9/11/14)
