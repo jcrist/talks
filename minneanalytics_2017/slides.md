@@ -207,7 +207,7 @@ Using a cluster of 4 `m4.xlarge` workers (16 cores)
 
 ~~~
 
-### Supports **most** of the Pandas api
+### Mirrors Pandas API
 
 ```python
 # Reductions
