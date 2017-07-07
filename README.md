@@ -38,6 +38,10 @@
     - [Slides](http://jcrist.github.io/talks/minneanalytics_2017/slides.html)
     - [Materials](minneanalytics_2017)
 
+- **Make it Work, Make it Right, Make it Fast - Debugging and Profiling in Dask** (PyData Seattle 2017)
+    - [Slides](http://jcrist.github.io/talks/profile_and_debug_dask/slides.html)
+    - [Materials](profile_and_debug_dask)
+
 ### Dynamics and SymPy:
 
 - **Generating Fast and Correct Code with SymPy** (PyMNtos 9/11/14)
