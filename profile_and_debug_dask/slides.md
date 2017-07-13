@@ -10,7 +10,7 @@ Continuum Analytics
 
 <hr width=40%>
 
-*PyData Seattle 2017*
+*SciPy 2017*
 
 ~===~
 
@@ -24,35 +24,9 @@ Continuum Analytics
 
 - Using blocked algorithms and task scheduling
 
-~~~
-
-### Blocked Algorithms
-
-**Blocked Mean**
-
-```python
-x = h5py.File('data.hdf5')['x']    # Trillion element array on disk
-
-sums = []
-counts = []
-N = 1000000
-for i in range(N):                  # One million times
-    chunk = x[N*i: N*(i+1)]         # Pull out chunk
-    sums.append(np.sum(chunk))      # Sum chunk
-    counts.append(len(chunk))       # Count chunk
-
-result = sum(sums) / sum(counts)    # Aggregate results
-```
-
-~~~
-
-### Blocked Algorithms
-
-<img src="../images/array-mean.svg" width="100%">
-
 ~===~
 
-## Most of the time you don't need to worry about any of this
+## Dask strives to be easy to use
 
 ~~~
 
@@ -104,19 +78,17 @@ search.fit(X, y)
 ~~~
 
 - Use `dask.visualize` to inspect graphs
-- `optimize_graph=True` shows what the scheduler sees
 
 ~~~
 
 - Profile!
 - `snakeviz` or `line_profiler` for task level profiling
-- `dask.diagnostics` for parallel profiling
+- `dask.diagnostics` or `dask.distributed` dashboard for parallel profiling
 
 ~~~
 
 - Debug locally
 - PDB works fine with dask
-- Error messages are your friends
 
 ~~~
 

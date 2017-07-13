@@ -30,7 +30,7 @@ def count_by_year(df):
 def counts_by_origin():
     results = []
     # For each file
-    for f in glob.glob('data/*.csv'):
+    for f in sorted(glob.glob('data/*.csv')):
         df = load_file(f)
         r = count_flights(df)
         results.append(r)

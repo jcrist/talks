@@ -6,7 +6,7 @@ import pandas as pd
 def counts_by_origin():
     frames = []
     # For each file
-    for f in glob.glob('data/*.csv'):
+    for f in sorted(glob.glob('data/*.csv')):
         # Load the dataframe
         df = pd.read_csv(f,
                          parse_dates={'Date': [0, 1, 2]},
