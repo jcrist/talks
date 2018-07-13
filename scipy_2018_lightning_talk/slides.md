@@ -46,13 +46,13 @@ Jim Crist
 
 ### Maybe they're useful to you?
 
-- **`conda-pack`**: Package conda environments for redistribution
+- [`conda-pack`](https://conda.github.io/conda-pack/): Package conda environments for redistribution
 
-- **`skein`**: Schedule and manage yarn applications
+- [`skein`](https://jcrist.github.io/skein/): Schedule and manage yarn applications
 
-- **`dask-yarn`**: Run dask on YARN
+- [`dask-yarn`](http://dask-yarn.readthedocs.io/): Run dask on YARN
 
-- **`hadoop-test-cluster`**: Test your code against a realistic hadoop cluster
+- [`hadoop-test-cluster`](https://github.com/jcrist/hadoop-test-cluster): Test your code against a realistic hadoop cluster
 
 ~===~
 
@@ -76,6 +76,6 @@ Jim Crist
 
 ###I'd love to get in contact:
 
-- Twitter: @jiminy_crist
+- Twitter: [@jiminy_crist](https://twitter.com/jiminy_crist)
 
-- Github: jcrist
+- Github: [jcrist](https://github.com/jcrist)
