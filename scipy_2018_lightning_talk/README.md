@@ -14,4 +14,6 @@ The tools:
 
 - [`hadoop-test-cluster`](https://github.com/jcrist/hadoop-test-cluster): Test your code against a realistic hadoop cluster
 
+Video is [here](https://youtu.be/d312Qq2z-Bk?t=49m18s).
+
 Slides can be viewed [here](http://jcrist.github.io/talks/scipy_2018_lightning_talk/slides.html).
