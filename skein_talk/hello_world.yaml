@@ -1,0 +1,10 @@
+name: hello-world
+queue: default
+
+services:
+  hello:
+    resources:
+      memory: 128 MiB
+      vcores: 1
+    commands:
+      - echo "hello world"

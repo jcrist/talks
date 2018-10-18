@@ -1,0 +1,14 @@
+name: csv2parquet
+queue: default
+
+services:
+  myapp:
+    resources:
+      memory: 128 MiB
+      vcores: 1
+    files:
+      environment: environment.tar.gz
+      script.py: csv2parquet.py
+    commands:
+      - source environment/bin/activate
+      - python csv2parquet.py
