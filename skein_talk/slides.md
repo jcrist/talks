@@ -206,7 +206,7 @@ services:
       ARROW_LIBHDFS_DIR: /opt/cloudera/parcels/CDH-5.15.1-1.cdh5.15.1.p0.4/lib64/
     files:
       environment: environment.tar.gz
-      script.py: csv2parquet.py
+      csv2parquet.py: csv2parquet.py
     commands:
       - source environment/bin/activate
       - python csv2parquet.py
@@ -272,13 +272,13 @@ services:
 from dask_yarn import YarnCluster
 from dask.distributed import Client
 
-# Create a cluster where each worker has 2 cores and 8 GiB of RAM
+# Create a cluster where each worker has 2 cores and 4 GiB of RAM
 cluster = YarnCluster(environment='environment.tar.gz',
                       worker_vcores=2,
-                      worker_memory="8GiB")
+                      worker_memory="4GiB")
 
-# Scale out to ten such workers
-cluster.scale(10)
+# Scale out to four such workers
+cluster.scale(4)
 
 # Connect to the cluster
 client = Client(cluster)
