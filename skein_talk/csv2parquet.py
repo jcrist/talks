@@ -1,3 +1,4 @@
+import io
 import pandas as pd
 import pyarrow as pa
 from pyarrow import hdfs
@@ -11,7 +12,7 @@ fs = hdfs.connect()
 
 print("Reading %r from hdfs" % infile)
 with fs.open(infile) as f:
-    df = pd.read_csv(f)
+    df = pd.read_csv(io.BytesIO(f.read()))
 
 print("Read %d rows" % len(df))
 
