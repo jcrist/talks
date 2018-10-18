@@ -33,19 +33,35 @@ YARN is a common deployment environment for data science/engineering tools
 
 ~===~
 
-I work on a similar tool ([Dask](https://dask.org/))
+## The Problem
 
 ---
 
+I work on a similar tool ([Dask](https://dask.org/))
+
 It would be nice to be able to deploy Dask on YARN
-
-~===~
-
-## Difficulties with deploying on YARN
 
 ~~~
 
-## Difficulties with deploying on YARN
+## tl;dr
+
+It works!
+
+~~~
+
+But how did we get here?
+
+~===~
+
+## Issues deploying Python on YARN
+
+~~~
+
+<img src="../images/one-does-not-simply-deploy-on-yarn.jpg" width=100%>
+
+~~~
+
+## Issues deploying Python on YARN
 
 - YARN is written in Java, Java only tooling
 
@@ -214,6 +230,10 @@ services:
 
 ~===~
 
+## Additional Features
+
+~~~
+
 ## Coordinating containers with the key-value store
 
 - Mainly for sharing dynamic configuration (e.g. ports)
@@ -226,10 +246,6 @@ services:
 - Can be used to build larger concurrency abstractions
 
 ~~~
-
-## Example
-
-~===~
 
 ## Extensible Web UI
 
