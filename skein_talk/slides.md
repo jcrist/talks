@@ -202,6 +202,8 @@ services:
     resources:
       memory: 128 MiB
       vcores: 1
+    env:
+      ARROW_LIBHDFS_DIR: /opt/cloudera/parcels/CDH-5.15.1-1.cdh5.15.1.p0.4/lib64/
     files:
       environment: environment.tar.gz
       script.py: csv2parquet.py

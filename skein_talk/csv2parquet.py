@@ -13,7 +13,10 @@ print("Reading %r from hdfs" % infile)
 with fs.open(infile) as f:
     df = pd.read_csv(f)
 
+print("Read %d rows" % len(df))
+
 print("Writing to %r on hdfs" % outfile)
-with fs.open(outfile) as f:
+with fs.open(outfile, 'wb') as f:
     table = pa.Table.from_pandas(df)
     pq.write_table(table, f)
+print("Done!")
