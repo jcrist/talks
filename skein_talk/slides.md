@@ -2,7 +2,7 @@
 
 ---
 
-#### Simpler YARN deployments
+#### Deploy Python on your Hadoop Cluster, easily
 
 <br>
 
@@ -10,17 +10,28 @@
 
 ~===~
 
-## What is Apache YARN???
+## "Hadoop Clusters"
 
-- The resource manager for scheduling applications on Hadoop clusters
+- Take many forms
+    - Enterprise distributions (Cloudera, Hortonworks, MapR, etc...)
+    - Cloud deployments (Amazon EMR, Google DataProc, etc...)
+    - Custom installations
 
-- Manages memory and cpu usage across the cluster
+- A collection of nodes managed by Apache YARN
+
+~~~
+
+## What is Apache YARN?
+
+- "Yet Another Resource Negotiator"
+
+- Manages memory and CPU usage across the cluster
 
 - Ensures resources are being shared across teams
 
 ~~~
 
-## What is Apache YARN???
+## What is Apache YARN?
 
 YARN is a common deployment environment for data science/engineering tools
 
@@ -29,7 +40,7 @@ YARN is a common deployment environment for data science/engineering tools
 - Hadoop
 - Hive
 - Impala
-...
+- ...
 
 ~===~
 
@@ -40,6 +51,14 @@ YARN is a common deployment environment for data science/engineering tools
 I work on a similar tool ([Dask](https://dask.org/))
 
 It would be nice to be able to deploy Dask on YARN
+
+~~~
+
+## The Problem
+
+---
+
+More generally, it would be nice to deploy *any* Python application on YARN.
 
 ~~~
 
@@ -89,7 +108,7 @@ But how did we get here?
 
 ## Hello World
 
-```
+```yaml
 name: hello-world
 queue: default
 
@@ -106,7 +125,7 @@ services:
 
 ## Hello World
 
-```
+```yaml
 name: hello-world
 queue: default
 
@@ -119,7 +138,7 @@ services:
       - echo "hello world"
 ```
 
-```
+```bash
 $ skein application submit hello_world.yaml
 ```
 
@@ -178,7 +197,7 @@ $ skein application submit hello_world.yaml
 
 ## Running a Python script
 
-```
+```yaml
 name: myapp
 queue: default
 
@@ -209,7 +228,7 @@ services:
 
 ## Running a Python script with dependencies
 
-```
+```yaml
 name: csv2parquet
 queue: default
 
@@ -226,6 +245,29 @@ services:
     commands:
       - source environment/bin/activate
       - python csv2parquet.py
+```
+
+~~~
+
+### Aside: these tools also work with PySpark/Sparklyr
+
+https://conda.github.io/conda-pack/spark.html
+
+```
+$ conda pack -o environment.tar.gz
+Collecting packages...
+Packing environment at '/Users/jcrist/anaconda/envs/example' to 'environment.tar.gz'
+[########################################] | 100% Completed | 23.2s
+```
+
+```
+$ PYSPARK_PYTHON=./environment/bin/python \
+spark-submit \
+--conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=./environment/bin/python \
+--master yarn \
+--deploy-mode cluster \
+--archives environment.tar.gz#environment \
+script.py
 ```
 
 ~===~
@@ -279,9 +321,36 @@ services:
 - Runs fine locally or on Travis CI
 - Designed to be extensible
 
+~~~
+
+## [`hadoop-test-cluster`](https://github.com/jcrist/hadoop-test-cluster)
+
+```bash
+$ pip install hadoop-test-cluster
+```
+
+```bash
+$ htcluster startup
+$ htcluster login
+```
+
 ~===~
 
 ## Putting it all together
+## [`dask-yarn`](http://yarn.dask.org)
+
+~~~
+
+## [`dask-yarn`](http://yarn.dask.org)
+
+- Install like any other Python library
+
+- Can deploy Dask on any Hadoop Cluster
+
+- Create clusters programatically, or using the CLI (`dask-yarn submit ...`)
+
+~~~
+
 ## [`dask-yarn`](http://yarn.dask.org)
 
 ```python
